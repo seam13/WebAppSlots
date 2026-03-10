@@ -52,3 +52,5 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/.vs/WebApplication2.slnx/FileContentIndex
+/.vs/WebApplication2.slnx/v18
