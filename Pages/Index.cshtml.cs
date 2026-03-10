@@ -15,7 +15,7 @@ namespace WebApplication2.Pages
 
         public void OnGet()
         {
-            string? valeur = Environment.GetEnvironmentVariable("ENVIRONMENT_DEPLOYEMENT",EnvironmentVariableTarget.Machine);
+            string? valeur = Environment.GetEnvironmentVariable("ENVIRONMENT_DEPLOYEMENT");
             env_deploy = valeur;
         }
     }
