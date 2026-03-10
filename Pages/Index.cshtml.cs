@@ -11,13 +11,12 @@ namespace WebApplication2.Pages
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
-
-            string? valeur = Environment.GetEnvironmentVariable("ENVIRONMENT_DEPLOYEMENT");
-            env_deploy = valeur;
         }
 
         public void OnGet()
         {
+            string? valeur = Environment.GetEnvironmentVariable("ENVIRONMENT_DEPLOYEMENT");
+            env_deploy = valeur;
         }
     }
 }
