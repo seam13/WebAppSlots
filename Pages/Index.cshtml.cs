@@ -6,11 +6,15 @@ namespace WebApplication2.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
+
+        public readonly IConfiguration _config;
+
         public string? env_deploy { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(ILogger<IndexModel> logger, IConfiguration config)
         {
             _logger = logger;
+            _config = config;
         }
 
         public void OnGet()
